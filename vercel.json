@@ -1,0 +1,10 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "installCommand": "npm install --legacy-peer-deps && prisma generate",
+  "buildCommand": "prisma generate && next build"
+}
